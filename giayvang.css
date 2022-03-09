@@ -1,0 +1,613 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial,sans-serif !important;
+    
+}
+body{
+    background-color: #f5f5f5;
+}
+.contener_menu{
+    width: 100%;
+    height: 170px;
+}
+.menu1{
+	width: 100%;
+	height: 170px;
+	margin: 0 auto;
+	background-color: #000000;
+}
+.menu_top{
+	width: auto;
+	height: 30px;
+	font-size: 12px;
+}
+.menu_top ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.menu_top a{
+	float: right;
+	text-align: center;
+	text-decoration: none;
+	width: 100px;
+	height: 20px;
+	color: white;
+	display: block;
+	padding-top: 5px;
+    box-sizing: border-box;
+}
+.menu_top_txt{
+	border-left: 1px solid white;
+}
+.menu_bot{
+    display: flex;
+}
+.logo img{
+    flex: 1;
+    width: 200px;
+    height: 130px;
+}
+.timkiem{
+	flex: 2;
+    padding-left: 200px;
+    margin: auto;
+}
+.timkiem select {
+    height:35px ;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+.timkiem input{
+    width: 400px;
+    height:35px ;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+.timkiem button{
+    width: 100px;
+    height:35px ;
+    border-radius: 4px;
+}
+.gio{
+    flex: 1;
+    padding-left: 100px;
+    margin: auto;
+}
+.gio button{
+    width: 100px;
+    height: 35px;
+}
+.menu2{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    padding: 0px 380px;
+    
+}
+.menu2>ul{
+    
+}
+.menu2 > ul > li{
+	list-style: none;
+	float: left;
+	position: relative;
+    padding: 0px 15px;
+    font-size: 17px;
+    line-height: 80px;
+    margin: auto;
+}
+
+.menu2 > ul>li>a{
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+.menu2 > ul>li>a::after{
+    content: "";
+    padding-top: 3px;
+    height: 0.5px;
+    width: 0px;
+    background: tomato;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.5s ease-in-out;
+}
+.menu2 > ul>li>a:hover{
+    color:rgb(255, 166, 0);
+}
+.menu2 > ul>li>a:hover::after{
+    width: 50%;
+    transform: translateX(100%);
+}
+ul.con{
+    width: 270px;
+	background-color:white;
+	list-style: none;
+	padding-left: 0px;
+	display: none;
+	position: absolute;
+    margin: auto;
+    border: 2px solid rgb(204, 204, 204);
+}
+ul.con >li{
+    
+    border: 1px solid rgb(204, 204, 204);
+    line-height: 30px;
+}
+ul.con >li > a{
+	color:gray;
+	text-decoration: none;
+	display: block;
+	line-height: 30px;
+}
+.menu2 > ul > li:hover ul.con {
+    display: block;
+}
+.noidung1{
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    display: flex;
+    position: 10px;
+    box-sizing: border-box;
+}
+.item1{
+    flex: 2;
+    background-color: white;
+}
+.item2{
+    flex: 4;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.anh.img0 img{
+    width: 510px;
+    height: 510px;
+}
+
+.anhcon{
+    display: flex;
+    margin-top: 10px;
+}
+.anhcon a.img1{
+    margin-right: 20px;
+   
+}
+.anhcon a{
+    opacity: 0.7;
+}
+.anhcon a:hover{
+    border: 1px solid gray;
+    opacity: 1;
+}
+.anhcon a.img img{
+    width: 110px;
+    height: 132px;
+}
+a.text {
+    color: rgba(102,102,102,.7);
+    font-weight: 400;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+h1{
+    line-height: 40px;
+    font-weight: 700;
+    color: #000;
+    margin: 10px auto ;
+}
+.thanh{
+    height: 3px;
+    display: block;
+    background-color: rgba(0,0,0,.1);
+    width: 100%;
+    margin: 20px 0px;
+    max-width: 30px;
+}
+.vanchuyen{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.vanchuyen label{
+    padding-left: 10px;
+    width: 110px;
+    height: 16px;
+    margin-right: 27px;
+}
+.tren img{
+    width: 25px;
+    height: 15px;
+}
+.duoi{
+    padding-left: 28px;
+    opacity: 0.5;
+}
+.giathanh{
+    width: 100%;
+    display: flex;
+}
+.gia{
+    padding-left: 150px;
+    font-size: 30px;
+    color:rgb(223, 6, 6);
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.giamgia{
+    font-size: 14px;
+    background-color: rgb(214, 14, 14);
+    color:rgb(245, 240, 240);
+    font-weight: bold;
+    height: 19px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin: 7px 15px;
+}
+.khungsize{
+    display: flex;
+}
+.size1{
+    width: 110px;
+    height: 17px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.size2{
+    margin-left: 40px;
+    max-width: 350px;
+    flex-wrap: wrap;
+    display: flex;
+    box-sizing: border-box;
+}
+.size2 .co{
+    width: 70px;
+    height: 40px;
+    margin: 0 14px 10px 0;
+    box-sizing: border-box;
+}
+.nut{
+    margin: 25px 0px;
+    box-sizing: border-box;
+}
+.buton{
+    width: 20px;
+    height: 40px;
+    margin: 0px 0px;
+}
+.input{
+    width: 40px;
+    height: 40px;
+    padding-left: 13px;
+    box-sizing: border-box;
+}
+.nut label{
+    margin-left: 30px;
+}
+.nut input{
+    width: 20px;
+    height: 30px;
+}
+#quantity{
+    width: 50px;
+    height: 30px;
+    padding-left: 17px;
+    box-sizing: border-box;
+}
+a.sl{
+    padding-left: 10px;
+    width: 110px;
+    height: 17px;
+    text-decoration: none;
+    margin-right: 72px;
+    color: #000;
+    box-sizing: border-box;
+}
+.ma{
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.danhmuc{
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.giohang{
+    margin-bottom: 30px;
+}
+button.gio{
+    background-color: rgb(255, 218, 224);
+    border: 1px solid red;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    padding: 0px;
+    color: rgb(245, 8, 8);
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+button.gio:hover{
+    opacity: 0.5;
+
+}
+button.mua{
+    background-color: rgb(230, 8, 45);
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    padding: 0px;
+    color: rgb(252, 252, 252);
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px;
+}
+button.mua:hover{
+    opacity: 0.5;
+}
+.baohanh{
+    border-top: 1px solid rgb(165, 165, 165);
+    width: 550px;
+    height: 70px;
+    padding: 30px 40px;
+}
+.baohanh img{
+    width: 20px;
+    height:20px ;
+}
+label.ngay{
+    margin-left: 20px;
+    opacity: 0.7;
+}
+.noidung2{
+    background-color: white;
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 30px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.nd1 h2{
+    font-weight: bold;
+    font-size: 27px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+.nd1 label{
+    font-size: 120%;
+    padding-bottom: 30px;
+}
+.nd2 img{
+    width: 400px;
+    height: 400px;
+    margin-left: 430px;
+    margin-top: 30px;
+    box-sizing: border-box ;
+}
+.nd2 span{
+    width: 500px;
+    height: 40px;
+    font-size: 120%;
+    margin-left: 500px;
+}
+.nd3{
+    margin-top: 30px;
+}
+.nd3 label{
+    font-size: 120%;
+}
+.nd3 img{
+    width: 400px;
+    height: 400px;
+    margin-left: 430px;
+    margin-top: 30px;
+    box-sizing: border-box ;
+}
+.nd3 span{
+    width: 500px;
+    height: 40px;
+    font-size: 120%;
+    margin-left: 500px;
+}
+.nd4{
+    margin-top: 30px;
+}
+.nd4 label{
+    font-size: 120%;
+}
+.p1{
+    margin: 30px 0px;
+}
+.p2{
+    margin-bottom: 30px;
+}
+.gach{
+    width: 70%;
+    height: 3px;
+    background-color: gray;
+    margin-bottom: 30px;
+}
+.nd5 span{
+    font-size: 120%;
+}
+.nd5 .dong{
+    margin: 10px 0px;
+}
+.noidung3{
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    background-color: white;
+}
+.slogun2{
+    text-align: center;
+}
+.slogun2 h1{
+    padding: 20px 20px;
+    color: #344862;
+    display: inline-block;
+    line-height: 1.15;
+    margin: 20px 0px;
+    box-sizing: border-box;
+}
+ul.item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 15px 0px;
+    box-sizing: border-box;
+}
+ul.item li{
+    flex-basis: 25%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+ul.item li .itemtop{
+    position: relative;
+    overflow: hidden;
+}
+ul.item li .itemtop .img{
+    display: block;
+}
+ul.item li .itemtop a.buy{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    padding: 10px 0px;
+    background-color: rgb(8, 8, 8);
+    color:white ;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -39px;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+}
+ul.item li:hover a.buy{
+    bottom: 0px;
+}
+ul.item li img{
+    max-width: 100%;
+    height: 334px;
+    vertical-align: bottom;
+}
+ul.item li .itembot a{
+    display: block;
+    text-decoration: none;
+}
+ul.item li .itembot a.ten{
+    color: #000;
+    font-weight: bold;
+    padding: 5px 0px;
+    box-sizing: border-box;
+}
+ul.item li .itembot a.ten1{
+    color: #000;
+    font-size: 14px;
+    padding: 3px 0px;
+    box-sizing: border-box;
+}
+ul.item li .itembot .gia{
+    padding: 0px;
+    color: rgb(211, 43, 43);
+    margin: 0px;
+    font-size: 16px;
+    text-align: start;
+}
+.giam{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: rgb(233, 48, 15);
+    padding: 5px 5px;
+    color: white;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 10px;
+    top: 20px;
+}
+.icon{
+    text-decoration: none;
+    box-sizing: border-box;
+    position: absolute;
+    top: 20px;
+    right: 1px;
+    font-size: 30px;
+    color: rgb(165, 165, 165);
+}
+footer{
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #000;
+}
+.bot1{
+    flex: 1;
+}
+.bot2{
+    flex: 1;
+}
+.bot3{
+    flex: 1;
+}
+.bot4{
+    flex: 1;
+    position: relative;
+}
+h4{
+    color:rgb(207, 14, 14);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-left: 30px;
+}
+p{
+    padding:5px 0px ;
+    color: white;
+    padding-left: 30px;
+}
+
+.bot ul{
+    padding-left: 50px;
+}
+.bot h4{
+    padding-left: 50px;
+}
+.bot ul li{
+    list-style: none;
+}
+.bot ul li>a{
+    text-decoration: none;
+    color:white;
+    line-height: 35px;
+}
+.icon0{
+    color:white;
+    position: absolute;
+}
+.icon1{
+    top: 50px;
+    left: 10px;
+}
+.icon2{
+    top: 50px;
+    left: 50px;
+}
+.icon3{
+    top: 50px;
+    left: 90px;
+}
+.page{
+    margin-top: 60px;
+}
